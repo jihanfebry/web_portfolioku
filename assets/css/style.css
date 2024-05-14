@@ -66,6 +66,7 @@ h6 {
   opacity: 1;
 }
 
+
 /*--------------------------------------------------------------
 # Disable AOS delay on mobile
 --------------------------------------------------------------*/
@@ -819,13 +820,17 @@ section {
   height: auto;
   border-radius: 8px;
   display: block;
-  transition: transform 0.5s;
+ 
+}
+
+.map{
+  height: 50%;
 }
 
 .row .layer {
   width: 100%;
   height: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), lightblue);
+  
   position: absolute;
   border-radius: 8px;
   left: 0;
@@ -849,7 +854,7 @@ section {
 }
 
 .layer i {
-  color: aqua;
+ 
   margin-top: 20px;
   font-size: 20px;
   background: black;
@@ -861,9 +866,7 @@ section {
   border-radius: 50%;
 }
 
-.row:hover img {
-  transform: scale(1.1);
-}
+
 
 .row:hover .layer {
   height: 100%;
@@ -951,6 +954,25 @@ section {
   background: #fff;
 }
 
+.fiturPenunjang{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card{
+  box-shadow : 0 2px 20px rgba(0,0,0,0.1);
+  justify-content: center;
+  align-items: center;
+  margin-left: 7vh;
+  margin: 5vh;
+
+}
+.card img{
+  width: 200px;
+  margin-top: 20px;
+}
+
 .testimonials .testimonial-item .testimonial-img {
   width: 90px;
   border-radius: 10px;
@@ -964,6 +986,166 @@ section {
   font-weight: bold;
   margin: 10px 0 5px 0;
   color: #111;
+}
+
+.footer {
+  display: flex;
+  justify-content: center; /* Pusatkan horizontal */
+  align-items: center; 
+  width: 100%;
+  padding-top: -10px;
+  padding-bottom: 30px;
+  background: #26282b;
+}
+
+.footer .container {
+  text-align: center; /* Pusatkan tulisan secara horizontal */
+}
+
+.footer p {
+  color: #fff;
+}
+.footer .logo {
+  height: 41px;
+  margin-bottom: 15px;
+}
+.footer .logo img {
+  height: 48px;
+}
+.footer .select-box {
+  display: inline-block;
+  position: relative;
+  height: 50px;
+  line-height: 48px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding-right: 15px;
+  padding-left: 25px;
+  margin-top: 20px;
+}
+.footer .select-box:hover {
+  border: 1px solid rgba(255, 255, 255, 0.35);
+}
+.footer .select-box span {
+  margin-right: 40px;
+}
+.footer .select-box .dropdown-toggle {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+}
+.footer .select-box .dropdown-toggle:hover {
+  text-decoration: none;
+}
+.footer .select-box .dropdown-toggle img {
+  width: 20px;
+  margin-right: 5px;
+}
+.footer .select-box .dropdown-menu {
+  width: 100%;
+  background: #fff;
+  border-radius: 0;
+  border: none;
+  margin-left: -25px;
+  margin-top: 13px;
+}
+.footer .select-box .dropdown-menu li {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footer .select-box .dropdown-menu li a {
+  display: block;
+  padding: 7px 25px;
+  font-size: 14px;
+  line-height: 1;
+}
+.footer .select-box .dropdown-menu li a:hover {
+  background: none;
+  color: #7D0A0A;
+}
+.footer .select-box .dropdown-menu li a img {
+  width: 20px;
+  margin-right: 5px;
+}
+.footer .footer-menu {
+  display: block;
+  margin: 0;
+}
+.footer .footer-menu li {
+  width: 100%;
+  float: left;
+  margin: 0;
+  padding: 4px 0;
+  list-style: none;
+}
+.footer .footer-menu li a {
+  float: left;
+  color: #fff;
+}
+.footer .footer-menu li a:hover {
+  color: #7D0A0A;
+}
+.footer .contact-box {
+  float: right;
+  color: #fff;
+  text-align: right;
+}
+.footer .contact-box h5 {
+  margin-bottom: 10px;
+  font-size: 19px;
+  font-family: "Playfair Display", serif;
+}
+.footer .contact-box h3 {
+  font-weight: 600;
+  margin: 0;
+}
+.footer .contact-box p {
+  margin-bottom: 10px;
+}
+.footer .contact-box p a {
+  color: #fff;
+  opacity: 0.5;
+}
+.footer .contact-box ul {
+  float: right;
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
+}
+.footer .contact-box ul li {
+  float: left;
+  margin-left: 5px;
+  padding: 0;
+  list-style: none;
+}
+.footer .contact-box ul li a {
+  width: 40px;
+  height: 40px;
+  float: left;
+  text-align: center;
+  line-height: 42px;
+  font-size: 13px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+}
+.footer .contact-box ul li a:hover {
+  color: #26282b;
+  background: #7D0A0A;
+}
+.footer .col-12 {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 30px;
+  margin-top: 0px;
+  color: #fff;
+  font-size: 13px;
+}
+.footer .col-12 .copyright {
+ text-align: center;
+}
+
+.footer .col-12 .creation a {
+  color: #fff;
 }
 
 .testimonials .testimonial-item h4 {
@@ -1105,7 +1287,6 @@ section {
   right: 0;
   bottom: 0;
   z-index: 3;
-  transition: all ease-in-out 0.3s;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -1149,9 +1330,7 @@ section {
   opacity: 1;
 }
 
-.portfolio .portfolio-wrap:hover img {
-  transform: scale(1.2);
-}
+
 
 .portfolio .portfolio-wrap:hover .portfolio-info {
   opacity: 1;
@@ -1440,6 +1619,7 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+
 .contact .contact-about h3 {
   font-size: 28px;
   margin: 0 0 10px 0;
